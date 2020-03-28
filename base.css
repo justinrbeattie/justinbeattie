@@ -1,0 +1,2198 @@
+:root {
+    --xs: .25rem;
+    --sm: .5rem;
+    --md: 1rem;
+    --lg: 1.5rem;
+    --xl: 2rem;
+    --xxl: 4rem;
+    --xxxl: 8rem;
+    --xxxxl: 16rem;
+    --font: 'Inter,sans-serif';
+}
+
+body,
+body *:not([unset]) {
+    font-family: var(--font);
+}
+
+body [pa],
+body [pt],
+body [pb],
+body [pl],
+body [pr] {
+    padding-left: var(--pl, var(--p));
+    padding-top: var(--pt, var(--p));
+    padding-right: var(--pr, var(--p));
+    padding-bottom: var(--pb, var(--p));
+}
+
+body [pa] > *,
+body [pt] > *,
+body [pb] > *,
+body [pl] > *,
+body [pr] > *{
+    --pl:0;
+    --pt:0;
+    --pr:0;
+    --pb:0;
+}
+
+body [ma],
+body [mt],
+body [mb],
+body [ml],
+body [mr] {
+    margin-left: var(--ml, var(--m));
+    margin-top: var(--mt, var(--m));
+    margin-right: var(--mr, var(--m));
+    margin-bottom: var(--mb, var(--m));
+}
+
+body [ma] > *,
+body [mt] > *,
+body [mb] > *,
+body [ml] > *,
+body [mr] > *{
+    --ml:0;
+    --mt:0;
+    --mr:0;
+    --mb:0;
+}
+
+body [ga] {
+    grid-gap: var(--g, var(--p));
+}
+
+body [ga] > * {
+    --g:0;
+}
+
+[font=primary] {
+    --font: 'Inter'
+}
+
+[font=heading] {
+    --font: 'Caslon'
+}
+
+@media screen and (max-width:479px) {
+    [ga*="xs:xs"] {
+        --g: var(--xs)
+    }
+
+    [ga*="xs:sm"] {
+        --g: var(--sm)
+    }
+
+    [ga*="xs:md"] {
+        --g: var(--md)
+    }
+
+    [ga*="xs:lg"] {
+        --g: var(--lg)
+    }
+
+    [ga*="xs:xl"] {
+        --g: var(--xl)
+    }
+
+    [ga*="xs:xxl"] {
+        --g: var(--xxl)
+    }
+
+    [ga*="xs:xxxl"] {
+        --g: var(--xxxl)
+    }
+
+    [ga*="xs:xxxxl"] {
+        --g: var(--xxxxl)
+    }
+
+    [pa*="xs:xs"] {
+        --p: var(--xs)
+    }
+
+    [pa*="xs:sm"] {
+        --p: var(--sm)
+    }
+
+    [pa*="xs:md"] {
+        --p: var(--md)
+    }
+
+    [pa*="xs:lg"] {
+        --p: var(--lg)
+    }
+
+    [pa*="xs:xl"] {
+        --p: var(--xl)
+    }
+
+    [pa*="xs:xxl"] {
+        --p: var(--xxl)
+    }
+
+    [pa*="xs:xxxl"] {
+        --p: var(--xxxl)
+    }
+
+    [pa*="xs:xxxxl"] {
+        --p: var(--xxxxl)
+    }
+
+    [pl*="xs:xs"] {
+        --pl: var(--xs)
+    }
+
+    [pl*="xs:sm"] {
+        --pl: var(--sm)
+    }
+
+    [pl*="xs:md"] {
+        --pl: var(--md)
+    }
+
+    [pl*="xs:lg"] {
+        --pl: var(--lg)
+    }
+
+    [pl*="xs:xl"] {
+        --pl: var(--xl)
+    }
+
+    [pl*="xs:xxl"] {
+        --pl: var(--xxl)
+    }
+
+    [pl*="xs:xxxl"] {
+        --pl: var(--xxxl)
+    }
+
+    [pl*="xs:xxxxl"] {
+        --pl: var(--xxxxl)
+    }
+
+    [pt*="xs:xs"] {
+        --pt: var(--xs)
+    }
+
+    [pt*="xs:sm"] {
+        --pt: var(--sm)
+    }
+
+    [pt*="xs:md"] {
+        --pt: var(--md)
+    }
+
+    [pt*="xs:lg"] {
+        --pt: var(--lg)
+    }
+
+    [pt*="xs:xl"] {
+        --pt: var(--xl)
+    }
+
+    [pt*="xs:xxl"] {
+        --pt: var(--xxl)
+    }
+
+    [pt*="xs:xxxl"] {
+        --pt: var(--xxxl)
+    }
+
+    [pt*="xs:xxxxl"] {
+        --pt: var(--xxxxl)
+    }
+
+    [pr*="xs:xs"] {
+        --pr: var(--xs)
+    }
+
+    [pr*="xs:sm"] {
+        --pr: var(--sm)
+    }
+
+    [pr*="xs:md"] {
+        --pr: var(--md)
+    }
+
+    [pr*="xs:lg"] {
+        --pr: var(--lg)
+    }
+
+    [pr*="xs:xl"] {
+        --pr: var(--xl)
+    }
+
+    [pr*="xs:xxl"] {
+        --pr: var(--xxl)
+    }
+
+    [pr*="xs:xxxl"] {
+        --pr: var(--xxxl)
+    }
+
+    [pr*="xs:xxxxl"] {
+        --pr: var(--xxxxl)
+    }
+
+    [pb*="xs:xs"] {
+        --pb: var(--xs)
+    }
+
+    [pb*="xs:sm"] {
+        --pb: var(--sm)
+    }
+
+    [pb*="xs:md"] {
+        --pb: var(--md)
+    }
+
+    [pb*="xs:lg"] {
+        --pb: var(--lg)
+    }
+
+    [pb*="xs:xl"] {
+        --pb: var(--xl)
+    }
+
+    [pb*="xs:xxl"] {
+        --pb: var(--xxl)
+    }
+
+    [pb*="xs:xxxl"] {
+        --pb: var(--xxxl)
+    }
+
+    [pb*="xs:xxxxl"] {
+        --pb: var(--xxxxl)
+    }
+
+    [ma*="xs:xs"] {
+        --m: var(--xs)
+    }
+
+    [ma*="xs:sm"] {
+        --m: var(--sm)
+    }
+
+    [ma*="xs:md"] {
+        --m: var(--md)
+    }
+
+    [ma*="xs:lg"] {
+        --m: var(--lg)
+    }
+
+    [ma*="xs:xl"] {
+        --m: var(--xl)
+    }
+
+    [ma*="xs:xxl"] {
+        --m: var(--xxl)
+    }
+
+    [ma*="xs:xxxl"] {
+        --m: var(--xxxl)
+    }
+
+    [ma*="xs:xxxxl"] {
+        --m: var(--xxxxl)
+    }
+
+    [ml*="xs:xs"] {
+        --ml: var(--xs)
+    }
+
+    [ml*="xs:sm"] {
+        --ml: var(--sm)
+    }
+
+    [ml*="xs:md"] {
+        --ml: var(--md)
+    }
+
+    [ml*="xs:lg"] {
+        --ml: var(--lg)
+    }
+
+    [ml*="xs:xl"] {
+        --ml: var(--xl)
+    }
+
+    [ml*="xs:xxl"] {
+        --ml: var(--xxl)
+    }
+
+    [ml*="xs:xxxl"] {
+        --ml: var(--xxxl)
+    }
+
+    [ml*="xs:xxxxl"] {
+        --ml: var(--xxxxl)
+    }
+
+    [mt*="xs:xs"] {
+        --mt: var(--xs)
+    }
+
+    [mt*="xs:sm"] {
+        --mt: var(--sm)
+    }
+
+    [mt*="xs:md"] {
+        --mt: var(--md)
+    }
+
+    [mt*="xs:lg"] {
+        --mt: var(--lg)
+    }
+
+    [mt*="xs:xl"] {
+        --mt: var(--xl)
+    }
+
+    [mt*="xs:xxl"] {
+        --mt: var(--xxl)
+    }
+
+    [mt*="xs:xxxl"] {
+        --mt: var(--xxxl)
+    }
+
+    [mt*="xs:xxxxl"] {
+        --mt: var(--xxxxl)
+    }
+
+    [mr*="xs:xs"] {
+        --mr: var(--xs)
+    }
+
+    [mr*="xs:sm"] {
+        --mr: var(--sm)
+    }
+
+    [mr*="xs:md"] {
+        --mr: var(--md)
+    }
+
+    [mr*="xs:lg"] {
+        --mr: var(--lg)
+    }
+
+    [mr*="xs:xl"] {
+        --mr: var(--xl)
+    }
+
+    [mr*="xs:xxl"] {
+        --mr: var(--xxl)
+    }
+
+    [mr*="xs:xxxl"] {
+        --mr: var(--xxxl)
+    }
+
+    [mr*="xs:xxxxl"] {
+        --mr: var(--xxxxl)
+    }
+
+    [mb*="xs:xs"] {
+        --mb: var(--xs)
+    }
+
+    [mb*="xs:sm"] {
+        --mb: var(--sm)
+    }
+
+    [mb*="xs:md"] {
+        --mb: var(--md)
+    }
+
+    [mb*="xs:lg"] {
+        --mb: var(--lg)
+    }
+
+    [mb*="xs:xl"] {
+        --mb: var(--xl)
+    }
+
+    [mb*="xs:xxl"] {
+        --mb: var(--xxl)
+    }
+
+    [mb*="xs:xxxl"] {
+        --mb: var(--xxxl)
+    }
+
+    [mb*="xs:xxxxl"] {
+        --mb: var(--xxxxl)
+    }
+}
+
+@media screen and (max-width:767px) {
+    [ga*="sm:xs"] {
+        --g: var(--xs)
+    }
+
+    [ga*="sm:sm"] {
+        --g: var(--sm)
+    }
+
+    [ga*="sm:md"] {
+        --g: var(--md)
+    }
+
+    [ga*="sm:lg"] {
+        --g: var(--lg)
+    }
+
+    [ga*="sm:xl"] {
+        --g: var(--xl)
+    }
+
+    [ga*="sm:xxl"] {
+        --g: var(--xxl)
+    }
+
+    [ga*="sm:xxxl"] {
+        --g: var(--xxxl)
+    }
+
+    [ga*="sm:xxxxl"] {
+        --g: var(--xxxxl)
+    }
+
+    [pa*="sm:xs"] {
+        --p: var(--xs)
+    }
+
+    [pa*="sm:sm"] {
+        --p: var(--sm)
+    }
+
+    [pa*="sm:md"] {
+        --p: var(--md)
+    }
+
+    [pa*="sm:lg"] {
+        --p: var(--lg)
+    }
+
+    [pa*="sm:xl"] {
+        --p: var(--xl)
+    }
+
+    [pa*="sm:xxl"] {
+        --p: var(--xxl)
+    }
+
+    [pa*="sm:xxxl"] {
+        --p: var(--xxxl)
+    }
+
+    [pa*="sm:xxxxl"] {
+        --p: var(--xxxxl)
+    }
+
+    [pl*="sm:xs"] {
+        --pl: var(--xs)
+    }
+
+    [pl*="sm:sm"] {
+        --pl: var(--sm)
+    }
+
+    [pl*="sm:md"] {
+        --pl: var(--md)
+    }
+
+    [pl*="sm:lg"] {
+        --pl: var(--lg)
+    }
+
+    [pl*="sm:xl"] {
+        --pl: var(--xl)
+    }
+
+    [pl*="sm:xxl"] {
+        --pl: var(--xxl)
+    }
+
+    [pl*="sm:xxxl"] {
+        --pl: var(--xxxl)
+    }
+
+    [pl*="sm:xxxxl"] {
+        --pl: var(--xxxxl)
+    }
+
+    [pt*="sm:xs"] {
+        --pt: var(--xs)
+    }
+
+    [pt*="sm:sm"] {
+        --pt: var(--sm)
+    }
+
+    [pt*="sm:md"] {
+        --pt: var(--md)
+    }
+
+    [pt*="sm:lg"] {
+        --pt: var(--lg)
+    }
+
+    [pt*="sm:xl"] {
+        --pt: var(--xl)
+    }
+
+    [pt*="sm:xxl"] {
+        --pt: var(--xxl)
+    }
+
+    [pt*="sm:xxxl"] {
+        --pt: var(--xxxl)
+    }
+
+    [pt*="sm:xxxxl"] {
+        --pt: var(--xxxxl)
+    }
+
+    [pr*="sm:xs"] {
+        --pr: var(--xs)
+    }
+
+    [pr*="sm:sm"] {
+        --pr: var(--sm)
+    }
+
+    [pr*="sm:md"] {
+        --pr: var(--md)
+    }
+
+    [pr*="sm:lg"] {
+        --pr: var(--lg)
+    }
+
+    [pr*="sm:xl"] {
+        --pr: var(--xl)
+    }
+
+    [pr*="sm:xxl"] {
+        --pr: var(--xxl)
+    }
+
+    [pr*="sm:xxxl"] {
+        --pr: var(--xxxl)
+    }
+
+    [pr*="sm:xxxxl"] {
+        --pr: var(--xxxxl)
+    }
+
+    [pb*="sm:xs"] {
+        --pb: var(--xs)
+    }
+
+    [pb*="sm:sm"] {
+        --pb: var(--sm)
+    }
+
+    [pb*="sm:md"] {
+        --pb: var(--md)
+    }
+
+    [pb*="sm:lg"] {
+        --pb: var(--lg)
+    }
+
+    [pb*="sm:xl"] {
+        --pb: var(--xl)
+    }
+
+    [pb*="sm:xxl"] {
+        --pb: var(--xxl)
+    }
+
+    [pb*="sm:xxxl"] {
+        --pb: var(--xxxl)
+    }
+
+    [pb*="sm:xxxxl"] {
+        --pb: var(--xxxxl)
+    }
+
+    [ma*="sm:xs"] {
+        --m: var(--xs)
+    }
+
+    [ma*="sm:sm"] {
+        --m: var(--sm)
+    }
+
+    [ma*="sm:md"] {
+        --m: var(--md)
+    }
+
+    [ma*="sm:lg"] {
+        --m: var(--lg)
+    }
+
+    [ma*="sm:xl"] {
+        --m: var(--xl)
+    }
+
+    [ma*="sm:xxl"] {
+        --m: var(--xxl)
+    }
+
+    [ma*="sm:xxxl"] {
+        --m: var(--xxxl)
+    }
+
+    [ma*="sm:xxxxl"] {
+        --m: var(--xxxxl)
+    }
+
+    [ml*="sm:xs"] {
+        --ml: var(--xs)
+    }
+
+    [ml*="sm:sm"] {
+        --ml: var(--sm)
+    }
+
+    [ml*="sm:md"] {
+        --ml: var(--md)
+    }
+
+    [ml*="sm:lg"] {
+        --ml: var(--lg)
+    }
+
+    [ml*="sm:xl"] {
+        --ml: var(--xl)
+    }
+
+    [ml*="sm:xxl"] {
+        --ml: var(--xxl)
+    }
+
+    [ml*="sm:xxxl"] {
+        --ml: var(--xxxl)
+    }
+
+    [ml*="sm:xxxxl"] {
+        --ml: var(--xxxxl)
+    }
+
+    [mt*="sm:xs"] {
+        --mt: var(--xs)
+    }
+
+    [mt*="sm:sm"] {
+        --mt: var(--sm)
+    }
+
+    [mt*="sm:md"] {
+        --mt: var(--md)
+    }
+
+    [mt*="sm:lg"] {
+        --mt: var(--lg)
+    }
+
+    [mt*="sm:xl"] {
+        --mt: var(--xl)
+    }
+
+    [mt*="sm:xxl"] {
+        --mt: var(--xxl)
+    }
+
+    [mt*="sm:xxxl"] {
+        --mt: var(--xxxl)
+    }
+
+    [mt*="sm:xxxxl"] {
+        --mt: var(--xxxxl)
+    }
+
+    [mr*="sm:xs"] {
+        --mr: var(--xs)
+    }
+
+    [mr*="sm:sm"] {
+        --mr: var(--sm)
+    }
+
+    [mr*="sm:md"] {
+        --mr: var(--md)
+    }
+
+    [mr*="sm:lg"] {
+        --mr: var(--lg)
+    }
+
+    [mr*="sm:xl"] {
+        --mr: var(--xl)
+    }
+
+    [mr*="sm:xxl"] {
+        --mr: var(--xxl)
+    }
+
+    [mr*="sm:xxxl"] {
+        --mr: var(--xxxl)
+    }
+
+    [mr*="sm:xxxxl"] {
+        --mr: var(--xxxxl)
+    }
+
+    [mb*="sm:xs"] {
+        --mb: var(--xs)
+    }
+
+    [mb*="sm:sm"] {
+        --mb: var(--sm)
+    }
+
+    [mb*="sm:md"] {
+        --mb: var(--md)
+    }
+
+    [mb*="sm:lg"] {
+        --mb: var(--lg)
+    }
+
+    [mb*="sm:xl"] {
+        --mb: var(--xl)
+    }
+
+    [mb*="sm:xxl"] {
+        --mb: var(--xxl)
+    }
+
+    [mb*="sm:xxxl"] {
+        --mb: var(--xxxl)
+    }
+
+    [mb*="sm:xxxxl"] {
+        --mb: var(--xxxxl)
+    }
+}
+
+@media screen and (max-width:991px) {
+    [ga*="md:xs"] {
+        --g: var(--xs)
+    }
+
+    [ga*="md:sm"] {
+        --g: var(--sm)
+    }
+
+    [ga*="md:md"] {
+        --g: var(--md)
+    }
+
+    [ga*="md:lg"] {
+        --g: var(--lg)
+    }
+
+    [ga*="md:xl"] {
+        --g: var(--xl)
+    }
+
+    [ga*="md:xxl"] {
+        --g: var(--xxl)
+    }
+
+    [ga*="md:xxxl"] {
+        --g: var(--xxxl)
+    }
+
+    [ga*="md:xxxxl"] {
+        --g: var(--xxxxl)
+    }
+
+    [pa*="md:xs"] {
+        --p: var(--xs)
+    }
+
+    [pa*="md:sm"] {
+        --p: var(--sm)
+    }
+
+    [pa*="md:md"] {
+        --p: var(--md)
+    }
+
+    [pa*="md:lg"] {
+        --p: var(--lg)
+    }
+
+    [pa*="md:xl"] {
+        --p: var(--xl)
+    }
+
+    [pa*="md:xxl"] {
+        --p: var(--xxl)
+    }
+
+    [pa*="md:xxxl"] {
+        --p: var(--xxxl)
+    }
+
+    [pa*="md:xxxxl"] {
+        --p: var(--xxxxl)
+    }
+
+    [pl*="md:xs"] {
+        --pl: var(--xs)
+    }
+
+    [pl*="md:sm"] {
+        --pl: var(--sm)
+    }
+
+    [pl*="md:md"] {
+        --pl: var(--md)
+    }
+
+    [pl*="md:lg"] {
+        --pl: var(--lg)
+    }
+
+    [pl*="md:xl"] {
+        --pl: var(--xl)
+    }
+
+    [pl*="md:xxl"] {
+        --pl: var(--xxl)
+    }
+
+    [pl*="md:xxxl"] {
+        --pl: var(--xxxl)
+    }
+
+    [pl*="md:xxxxl"] {
+        --pl: var(--xxxxl)
+    }
+
+    [pt*="md:xs"] {
+        --pt: var(--xs)
+    }
+
+    [pt*="md:sm"] {
+        --pt: var(--sm)
+    }
+
+    [pt*="md:md"] {
+        --pt: var(--md)
+    }
+
+    [pt*="md:lg"] {
+        --pt: var(--lg)
+    }
+
+    [pt*="md:xl"] {
+        --pt: var(--xl)
+    }
+
+    [pt*="md:xxl"] {
+        --pt: var(--xxl)
+    }
+
+    [pt*="md:xxxl"] {
+        --pt: var(--xxxl)
+    }
+
+    [pt*="md:xxxxl"] {
+        --pt: var(--xxxxl)
+    }
+
+    [pr*="md:xs"] {
+        --pr: var(--xs)
+    }
+
+    [pr*="md:sm"] {
+        --pr: var(--sm)
+    }
+
+    [pr*="md:md"] {
+        --pr: var(--md)
+    }
+
+    [pr*="md:lg"] {
+        --pr: var(--lg)
+    }
+
+    [pr*="md:xl"] {
+        --pr: var(--xl)
+    }
+
+    [pr*="md:xxl"] {
+        --pr: var(--xxl)
+    }
+
+    [pr*="md:xxxl"] {
+        --pr: var(--xxxl)
+    }
+
+    [pr*="md:xxxxl"] {
+        --pr: var(--xxxxl)
+    }
+
+    [pb*="md:xs"] {
+        --pb: var(--xs)
+    }
+
+    [pb*="md:sm"] {
+        --pb: var(--sm)
+    }
+
+    [pb*="md:md"] {
+        --pb: var(--md)
+    }
+
+    [pb*="md:lg"] {
+        --pb: var(--lg)
+    }
+
+    [pb*="md:xl"] {
+        --pb: var(--xl)
+    }
+
+    [pb*="md:xxl"] {
+        --pb: var(--xxl)
+    }
+
+    [pb*="md:xxxl"] {
+        --pb: var(--xxxl)
+    }
+
+    [pb*="md:xxxxl"] {
+        --pb: var(--xxxxl)
+    }
+
+    [ma*="md:xs"] {
+        --m: var(--xs)
+    }
+
+    [ma*="md:sm"] {
+        --m: var(--sm)
+    }
+
+    [ma*="md:md"] {
+        --m: var(--md)
+    }
+
+    [ma*="md:lg"] {
+        --m: var(--lg)
+    }
+
+    [ma*="md:xl"] {
+        --m: var(--xl)
+    }
+
+    [ma*="md:xxl"] {
+        --m: var(--xxl)
+    }
+
+    [ma*="md:xxxl"] {
+        --m: var(--xxxl)
+    }
+
+    [ma*="md:xxxxl"] {
+        --m: var(--xxxxl)
+    }
+
+    [ml*="md:xs"] {
+        --ml: var(--xs)
+    }
+
+    [ml*="md:sm"] {
+        --ml: var(--sm)
+    }
+
+    [ml*="md:md"] {
+        --ml: var(--md)
+    }
+
+    [ml*="md:lg"] {
+        --ml: var(--lg)
+    }
+
+    [ml*="md:xl"] {
+        --ml: var(--xl)
+    }
+
+    [ml*="md:xxl"] {
+        --ml: var(--xxl)
+    }
+
+    [ml*="md:xxxl"] {
+        --ml: var(--xxxl)
+    }
+
+    [ml*="md:xxxxl"] {
+        --ml: var(--xxxxl)
+    }
+
+    [mt*="md:xs"] {
+        --mt: var(--xs)
+    }
+
+    [mt*="md:sm"] {
+        --mt: var(--sm)
+    }
+
+    [mt*="md:md"] {
+        --mt: var(--md)
+    }
+
+    [mt*="md:lg"] {
+        --mt: var(--lg)
+    }
+
+    [mt*="md:xl"] {
+        --mt: var(--xl)
+    }
+
+    [mt*="md:xxl"] {
+        --mt: var(--xxl)
+    }
+
+    [mt*="md:xxxl"] {
+        --mt: var(--xxxl)
+    }
+
+    [mt*="md:xxxxl"] {
+        --mt: var(--xxxxl)
+    }
+
+    [mr*="md:xs"] {
+        --mr: var(--xs)
+    }
+
+    [mr*="md:sm"] {
+        --mr: var(--sm)
+    }
+
+    [mr*="md:md"] {
+        --mr: var(--md)
+    }
+
+    [mr*="md:lg"] {
+        --mr: var(--lg)
+    }
+
+    [mr*="md:xl"] {
+        --mr: var(--xl)
+    }
+
+    [mr*="md:xxl"] {
+        --mr: var(--xxl)
+    }
+
+    [mr*="md:xxxl"] {
+        --mr: var(--xxxl)
+    }
+
+    [mr*="md:xxxxl"] {
+        --mr: var(--xxxxl)
+    }
+
+    [mb*="md:xs"] {
+        --mb: var(--xs)
+    }
+
+    [mb*="md:sm"] {
+        --mb: var(--sm)
+    }
+
+    [mb*="md:md"] {
+        --mb: var(--md)
+    }
+
+    [mb*="md:lg"] {
+        --mb: var(--lg)
+    }
+
+    [mb*="md:xl"] {
+        --mb: var(--xl)
+    }
+
+    [mb*="md:xxl"] {
+        --mb: var(--xxl)
+    }
+
+    [mb*="md:xxxl"] {
+        --mb: var(--xxxl)
+    }
+
+    [mb*="md:xxxxl"] {
+        --mb: var(--xxxxl)
+    }
+}
+
+@media screen and (max-width:1920px) {
+    [ga*="lg:xs"] {
+        --g: var(--xs)
+    }
+
+    [ga*="lg:sm"] {
+        --g: var(--sm)
+    }
+
+    [ga*="lg:md"] {
+        --g: var(--md)
+    }
+
+    [ga*="lg:lg"] {
+        --g: var(--lg)
+    }
+
+    [ga*="lg:xl"] {
+        --g: var(--xl)
+    }
+
+    [ga*="lg:xxl"] {
+        --g: var(--xxl)
+    }
+
+    [ga*="lg:xxxl"] {
+        --g: var(--xxxl)
+    }
+
+    [ga*="lg:xxxxl"] {
+        --g: var(--xxxxl)
+    }
+
+    [pa*="lg:xs"] {
+        --p: var(--xs)
+    }
+
+    [pa*="lg:sm"] {
+        --p: var(--sm)
+    }
+
+    [pa*="lg:md"] {
+        --p: var(--md)
+    }
+
+    [pa*="lg:lg"] {
+        --p: var(--lg)
+    }
+
+    [pa*="lg:xl"] {
+        --p: var(--xl)
+    }
+
+    [pa*="lg:xxl"] {
+        --p: var(--xxl)
+    }
+
+    [pa*="lg:xxxl"] {
+        --p: var(--xxxl)
+    }
+
+    [pa*="lg:xxxxl"] {
+        --p: var(--xxxxl)
+    }
+
+    [pl*="lg:xs"] {
+        --pl: var(--xs)
+    }
+
+    [pl*="lg:sm"] {
+        --pl: var(--sm)
+    }
+
+    [pl*="lg:md"] {
+        --pl: var(--md)
+    }
+
+    [pl*="lg:lg"] {
+        --pl: var(--lg)
+    }
+
+    [pl*="lg:xl"] {
+        --pl: var(--xl)
+    }
+
+    [pl*="lg:xxl"] {
+        --pl: var(--xxl)
+    }
+
+    [pl*="lg:xxxl"] {
+        --pl: var(--xxxl)
+    }
+
+    [pl*="lg:xxxxl"] {
+        --pl: var(--xxxxl)
+    }
+
+    [pt*="lg:xs"] {
+        --pt: var(--xs)
+    }
+
+    [pt*="lg:sm"] {
+        --pt: var(--sm)
+    }
+
+    [pt*="lg:md"] {
+        --pt: var(--md)
+    }
+
+    [pt*="lg:lg"] {
+        --pt: var(--lg)
+    }
+
+    [pt*="lg:xl"] {
+        --pt: var(--xl)
+    }
+
+    [pt*="lg:xxl"] {
+        --pt: var(--xxl)
+    }
+
+    [pt*="lg:xxxl"] {
+        --pt: var(--xxxl)
+    }
+
+    [pt*="lg:xxxxl"] {
+        --pt: var(--xxxxl)
+    }
+
+    [pr*="lg:xs"] {
+        --pr: var(--xs)
+    }
+
+    [pr*="lg:sm"] {
+        --pr: var(--sm)
+    }
+
+    [pr*="lg:md"] {
+        --pr: var(--md)
+    }
+
+    [pr*="lg:lg"] {
+        --pr: var(--lg)
+    }
+
+    [pr*="lg:xl"] {
+        --pr: var(--xl)
+    }
+
+    [pr*="lg:xxl"] {
+        --pr: var(--xxl)
+    }
+
+    [pr*="lg:xxxl"] {
+        --pr: var(--xxxl)
+    }
+
+    [pr*="lg:xxxxl"] {
+        --pr: var(--xxxxl)
+    }
+
+    [pb*="lg:xs"] {
+        --pb: var(--xs)
+    }
+
+    [pb*="lg:sm"] {
+        --pb: var(--sm)
+    }
+
+    [pb*="lg:md"] {
+        --pb: var(--md)
+    }
+
+    [pb*="lg:lg"] {
+        --pb: var(--lg)
+    }
+
+    [pb*="lg:xl"] {
+        --pb: var(--xl)
+    }
+
+    [pb*="lg:xxl"] {
+        --pb: var(--xxl)
+    }
+
+    [pb*="lg:xxxl"] {
+        --pb: var(--xxxl)
+    }
+
+    [pb*="lg:xxxxl"] {
+        --pb: var(--xxxxl)
+    }
+
+    [ma*="lg:xs"] {
+        --m: var(--xs)
+    }
+
+    [ma*="lg:sm"] {
+        --m: var(--sm)
+    }
+
+    [ma*="lg:md"] {
+        --m: var(--md)
+    }
+
+    [ma*="lg:lg"] {
+        --m: var(--lg)
+    }
+
+    [ma*="lg:xl"] {
+        --m: var(--xl)
+    }
+
+    [ma*="lg:xxl"] {
+        --m: var(--xxl)
+    }
+
+    [ma*="lg:xxxl"] {
+        --m: var(--xxxl)
+    }
+
+    [ma*="lg:xxxxl"] {
+        --m: var(--xxxxl)
+    }
+
+    [ml*="lg:xs"] {
+        --ml: var(--xs)
+    }
+
+    [ml*="lg:sm"] {
+        --ml: var(--sm)
+    }
+
+    [ml*="lg:md"] {
+        --ml: var(--md)
+    }
+
+    [ml*="lg:lg"] {
+        --ml: var(--lg)
+    }
+
+    [ml*="lg:xl"] {
+        --ml: var(--xl)
+    }
+
+    [ml*="lg:xxl"] {
+        --ml: var(--xxl)
+    }
+
+    [ml*="lg:xxxl"] {
+        --ml: var(--xxxl)
+    }
+
+    [ml*="lg:xxxxl"] {
+        --ml: var(--xxxxl)
+    }
+
+    [mt*="lg:xs"] {
+        --mt: var(--xs)
+    }
+
+    [mt*="lg:sm"] {
+        --mt: var(--sm)
+    }
+
+    [mt*="lg:md"] {
+        --mt: var(--md)
+    }
+
+    [mt*="lg:lg"] {
+        --mt: var(--lg)
+    }
+
+    [mt*="lg:xl"] {
+        --mt: var(--xl)
+    }
+
+    [mt*="lg:xxl"] {
+        --mt: var(--xxl)
+    }
+
+    [mt*="lg:xxxl"] {
+        --mt: var(--xxxl)
+    }
+
+    [mt*="lg:xxxxl"] {
+        --mt: var(--xxxxl)
+    }
+
+    [mr*="lg:xs"] {
+        --mr: var(--xs)
+    }
+
+    [mr*="lg:sm"] {
+        --mr: var(--sm)
+    }
+
+    [mr*="lg:md"] {
+        --mr: var(--md)
+    }
+
+    [mr*="lg:lg"] {
+        --mr: var(--lg)
+    }
+
+    [mr*="lg:xl"] {
+        --mr: var(--xl)
+    }
+
+    [mr*="lg:xxl"] {
+        --mr: var(--xxl)
+    }
+
+    [mr*="lg:xxxl"] {
+        --mr: var(--xxxl)
+    }
+
+    [mr*="lg:xxxxl"] {
+        --mr: var(--xxxxl)
+    }
+
+    [mb*="lg:xs"] {
+        --mb: var(--xs)
+    }
+
+    [mb*="lg:sm"] {
+        --mb: var(--sm)
+    }
+
+    [mb*="lg:md"] {
+        --mb: var(--md)
+    }
+
+    [mb*="lg:lg"] {
+        --mb: var(--lg)
+    }
+
+    [mb*="lg:xl"] {
+        --mb: var(--xl)
+    }
+
+    [mb*="lg:xxl"] {
+        --mb: var(--xxl)
+    }
+
+    [mb*="lg:xxxl"] {
+        --mb: var(--xxxl)
+    }
+
+    [mb*="lg:xxxxl"] {
+        --mb: var(--xxxxl)
+    }
+}
+
+@media screen and (min-width:1921px) {
+    [ga*="lg:xs"] {
+        --g: var(--xs)
+    }
+
+    [ga*="lg:sm"] {
+        --g: var(--sm)
+    }
+
+    [ga*="lg:md"] {
+        --g: var(--md)
+    }
+
+    [ga*="lg:lg"] {
+        --g: var(--lg)
+    }
+
+    [ga*="lg:xl"] {
+        --g: var(--xl)
+    }
+
+    [ga*="lg:xxl"] {
+        --g: var(--xxl)
+    }
+
+    [ga*="lg:xxxl"] {
+        --g: var(--xxxl)
+    }
+
+    [ga*="lg:xxxxl"] {
+        --g: var(--xxxxl)
+    }
+
+    [pa*="xl:xs"] {
+        --p: var(--xs)
+    }
+
+    [pa*="xl:sm"] {
+        --p: var(--sm)
+    }
+
+    [pa*="xl:md"] {
+        --p: var(--md)
+    }
+
+    [pa*="xl:lg"] {
+        --p: var(--lg)
+    }
+
+    [pa*="xl:xl"] {
+        --p: var(--xl)
+    }
+
+    [pa*="xl:xxl"] {
+        --p: var(--xxl)
+    }
+
+    [pa*="xl:xxxl"] {
+        --p: var(--xxxl)
+    }
+
+    [pa*="xl:xxxxl"] {
+        --p: var(--xxxxl)
+    }
+
+    [pl*="xl:xs"] {
+        --pl: var(--xs)
+    }
+
+    [pl*="xl:sm"] {
+        --pl: var(--sm)
+    }
+
+    [pl*="xl:md"] {
+        --pl: var(--md)
+    }
+
+    [pl*="xl:lg"] {
+        --pl: var(--lg)
+    }
+
+    [pl*="xl:xl"] {
+        --pl: var(--xl)
+    }
+
+    [pl*="xl:xxl"] {
+        --pl: var(--xxl)
+    }
+
+    [pl*="xl:xxxl"] {
+        --pl: var(--xxxl)
+    }
+
+    [pl*="xl:xxxxl"] {
+        --pl: var(--xxxxl)
+    }
+
+    [pt*="xl:xs"] {
+        --pt: var(--xs)
+    }
+
+    [pt*="xl:sm"] {
+        --pt: var(--sm)
+    }
+
+    [pt*="xl:md"] {
+        --pt: var(--md)
+    }
+
+    [pt*="xl:lg"] {
+        --pt: var(--lg)
+    }
+
+    [pt*="xl:xl"] {
+        --pt: var(--xl)
+    }
+
+    [pt*="xl:xxl"] {
+        --pt: var(--xxl)
+    }
+
+    [pt*="xl:xxxl"] {
+        --pt: var(--xxxl)
+    }
+
+    [pt*="xl:xxxxl"] {
+        --pt: var(--xxxxl)
+    }
+
+    [pr*="xl:xs"] {
+        --pr: var(--xs)
+    }
+
+    [pr*="xl:sm"] {
+        --pr: var(--sm)
+    }
+
+    [pr*="xl:md"] {
+        --pr: var(--md)
+    }
+
+    [pr*="xl:lg"] {
+        --pr: var(--lg)
+    }
+
+    [pr*="xl:xl"] {
+        --pr: var(--xl)
+    }
+
+    [pr*="xl:xxl"] {
+        --pr: var(--xxl)
+    }
+
+    [pr*="xl:xxxl"] {
+        --pr: var(--xxxl)
+    }
+
+    [pr*="xl:xxxxl"] {
+        --pr: var(--xxxxl)
+    }
+
+    [pb*="xl:xs"] {
+        --pb: var(--xs)
+    }
+
+    [pb*="xl:sm"] {
+        --pb: var(--sm)
+    }
+
+    [pb*="xl:md"] {
+        --pb: var(--md)
+    }
+
+    [pb*="xl:lg"] {
+        --pb: var(--lg)
+    }
+
+    [pb*="xl:xl"] {
+        --pb: var(--xl)
+    }
+
+    [pb*="xl:xxl"] {
+        --pb: var(--xxl)
+    }
+
+    [pb*="xl:xxxl"] {
+        --pb: var(--xxxl)
+    }
+
+    [pb*="xl:xxxxl"] {
+        --pb: var(--xxxxl)
+    }
+
+    [ma*="xl:xs"] {
+        --m: var(--xs)
+    }
+
+    [ma*="xl:sm"] {
+        --m: var(--sm)
+    }
+
+    [ma*="xl:md"] {
+        --m: var(--md)
+    }
+
+    [ma*="xl:lg"] {
+        --m: var(--lg)
+    }
+
+    [ma*="xl:xl"] {
+        --m: var(--xl)
+    }
+
+    [ma*="xl:xxl"] {
+        --m: var(--xxl)
+    }
+
+    [ma*="xl:xxxl"] {
+        --m: var(--xxxl)
+    }
+
+    [ma*="xl:xxxxl"] {
+        --m: var(--xxxxl)
+    }
+
+    [ml*="xl:xs"] {
+        --ml: var(--xs)
+    }
+
+    [ml*="xl:sm"] {
+        --ml: var(--sm)
+    }
+
+    [ml*="xl:md"] {
+        --ml: var(--md)
+    }
+
+    [ml*="xl:lg"] {
+        --ml: var(--lg)
+    }
+
+    [ml*="xl:xl"] {
+        --ml: var(--xl)
+    }
+
+    [ml*="xl:xxl"] {
+        --ml: var(--xxl)
+    }
+
+    [ml*="xl:xxxl"] {
+        --ml: var(--xxxl)
+    }
+
+    [ml*="xl:xxxxl"] {
+        --ml: var(--xxxxl)
+    }
+
+    [mt*="xl:xs"] {
+        --mt: var(--xs)
+    }
+
+    [mt*="xl:sm"] {
+        --mt: var(--sm)
+    }
+
+    [mt*="xl:md"] {
+        --mt: var(--md)
+    }
+
+    [mt*="xl:lg"] {
+        --mt: var(--lg)
+    }
+
+    [mt*="xl:xl"] {
+        --mt: var(--xl)
+    }
+
+    [mt*="xl:xxl"] {
+        --mt: var(--xxl)
+    }
+
+    [mt*="xl:xxxl"] {
+        --mt: var(--xxxl)
+    }
+
+    [mt*="xl:xxxxl"] {
+        --mt: var(--xxxxl)
+    }
+
+    [mr*="xl:xs"] {
+        --mr: var(--xs)
+    }
+
+    [mr*="xl:sm"] {
+        --mr: var(--sm)
+    }
+
+    [mr*="xl:md"] {
+        --mr: var(--md)
+    }
+
+    [mr*="xl:lg"] {
+        --mr: var(--lg)
+    }
+
+    [mr*="xl:xl"] {
+        --mr: var(--xl)
+    }
+
+    [mr*="xl:xxl"] {
+        --mr: var(--xxl)
+    }
+
+    [mr*="xl:xxxl"] {
+        --mr: var(--xxxl)
+    }
+
+    [mr*="xl:xxxxl"] {
+        --mr: var(--xxxxl)
+    }
+
+    [mb*="xl:xs"] {
+        --mb: var(--xs)
+    }
+
+    [mb*="xl:sm"] {
+        --mb: var(--sm)
+    }
+
+    [mb*="xl:md"] {
+        --mb: var(--md)
+    }
+
+    [mb*="xl:lg"] {
+        --mb: var(--lg)
+    }
+
+    [mb*="xl:xl"] {
+        --mb: var(--xl)
+    }
+
+    [mb*="xl:xxl"] {
+        --mb: var(--xxl)
+    }
+
+    [mb*="xl:xxxl"] {
+        --mb: var(--xxxl)
+    }
+
+    [mb*="xl:xxxxl"] {
+        --mb: var(--xxxxl)
+    }
+}
+
+[ga=xs] {
+    --g: var(--xs)
+}
+
+[ga=sm] {
+    --g: var(--sm)
+}
+
+[ga=md] {
+    --g: var(--md)
+}
+
+[ga=lg] {
+    --g: var(--lg)
+}
+
+[ga=xl] {
+    --g: var(--xl)
+}
+
+[ga=xxl] {
+    --g: var(--xxl)
+}
+
+[ga=xxxl] {
+    --g: var(--xxxl)
+}
+
+[ga=xxxxl] {
+    --g: var(--xxxxl)
+}
+
+[pa=xs] {
+    --p: var(--xs)
+}
+
+[pa=sm] {
+    --p: var(--sm)
+}
+
+[pa=md] {
+    --p: var(--md)
+}
+
+[pa=lg] {
+    --p: var(--lg)
+}
+
+[pa=xl] {
+    --p: var(--xl)
+}
+
+[pa=xxl] {
+    --p: var(--xxl)
+}
+
+[pa=xxxl] {
+    --p: var(--xxxl)
+}
+
+[pa=xxxxl] {
+    --p: var(--xxxxl)
+}
+
+[pl=xs] {
+    --pl: var(--xs)
+}
+
+[pl=sm] {
+    --pl: var(--sm)
+}
+
+[pl=md] {
+    --pl: var(--md)
+}
+
+[pl=lg] {
+    --pl: var(--lg)
+}
+
+[pl=xl] {
+    --pl: var(--xl)
+}
+
+[pl=xxl] {
+    --pl: var(--xxl)
+}
+
+[pl=xxxl] {
+    --pl: var(--xxxl)
+}
+
+[pl=xxxxl] {
+    --pl: var(--xxxxl)
+}
+
+[pt=xs] {
+    --pt: var(--xs)
+}
+
+[pt=sm] {
+    --pt: var(--sm)
+}
+
+[pt=md] {
+    --pt: var(--md)
+}
+
+[pt=lg] {
+    --pt: var(--lg)
+}
+
+[pt=xl] {
+    --pt: var(--xl)
+}
+
+[pt=xxl] {
+    --pt: var(--xxl)
+}
+
+[pt=xxxl] {
+    --pt: var(--xxxl)
+}
+
+[pt=xxxxl] {
+    --pt: var(--xxxxl)
+}
+
+[pr=xs] {
+    --pr: var(--xs)
+}
+
+[pr=sm] {
+    --pr: var(--sm)
+}
+
+[pr=md] {
+    --pr: var(--md)
+}
+
+[pr=lg] {
+    --pr: var(--lg)
+}
+
+[pr=xl] {
+    --pr: var(--xl)
+}
+
+[pr=xxl] {
+    --pr: var(--xxl)
+}
+
+[pr=xxxl] {
+    --pr: var(--xxxl)
+}
+
+[pr=xxxxl] {
+    --pr: var(--xxxxl)
+}
+
+[pb=xs] {
+    --pb: var(--xs)
+}
+
+[pb=sm] {
+    --pb: var(--sm)
+}
+
+[pb=md] {
+    --pb: var(--md)
+}
+
+[pb=lg] {
+    --pb: var(--lg)
+}
+
+[pb=xl] {
+    --pb: var(--xl)
+}
+
+[pb=xxl] {
+    --pb: var(--xxl)
+}
+
+[pb=xxxl] {
+    --pb: var(--xxxl)
+}
+
+[pb=xxxxl] {
+    --pb: var(--xxxxl)
+}
+
+[ma=xs] {
+    --m: var(--xs)
+}
+
+[ma=sm] {
+    --m: var(--sm)
+}
+
+[ma=md] {
+    --m: var(--md)
+}
+
+[ma=lg] {
+    --m: var(--lg)
+}
+
+[ma=xl] {
+    --m: var(--xl)
+}
+
+[ma=xxl] {
+    --m: var(--xxl)
+}
+
+[ma=xxxl] {
+    --m: var(--xxxl)
+}
+
+[ma=xxxxl] {
+    --m: var(--xxxxl)
+}
+
+[ml=xs] {
+    --ml: var(--xs)
+}
+
+[ml=sm] {
+    --ml: var(--sm)
+}
+
+[ml=md] {
+    --ml: var(--md)
+}
+
+[ml=lg] {
+    --ml: var(--lg)
+}
+
+[ml=xl] {
+    --ml: var(--xl)
+}
+
+[ml=xxl] {
+    --ml: var(--xxl)
+}
+
+[ml=xxxl] {
+    --ml: var(--xxxl)
+}
+
+[ml=xxxxl] {
+    --ml: var(--xxxxl)
+}
+
+[mt=xs] {
+    --mt: var(--xs)
+}
+
+[mt=sm] {
+    --mt: var(--sm)
+}
+
+[mt=md] {
+    --mt: var(--md)
+}
+
+[mt=lg] {
+    --mt: var(--lg)
+}
+
+[mt=xl] {
+    --mt: var(--xl)
+}
+
+[mt=xxl] {
+    --mt: var(--xxl)
+}
+
+[mt=xxxl] {
+    --mt: var(--xxxl)
+}
+
+[mt=xxxxl] {
+    --mt: var(--xxxxl)
+}
+
+[mr=xs] {
+    --mr: var(--xs)
+}
+
+[mr=sm] {
+    --mr: var(--sm)
+}
+
+[mr=md] {
+    --mr: var(--md)
+}
+
+[mr=lg] {
+    --mr: var(--lg)
+}
+
+[mr=xl] {
+    --mr: var(--xl)
+}
+
+[mr=xxl] {
+    --mr: var(--xxl)
+}
+
+[mr=xxxl] {
+    --mr: var(--xxxl)
+}
+
+[mr=xxxxl] {
+    --mr: var(--xxxxl)
+}
+
+[mb=xs] {
+    --mb: var(--xs)
+}
+
+[mb=sm] {
+    --mb: var(--sm)
+}
+
+[mb=md] {
+    --mb: var(--md)
+}
+
+[mb=lg] {
+    --mb: var(--lg)
+}
+
+[mb=xl] {
+    --mb: var(--xl)
+}
+
+[mb=xxl] {
+    --mb: var(--xxl)
+}
+
+[mb=xxxl] {
+    --mb: var(--xxxl)
+}
+
+[mb=xxxxl] {
+    --mb: var(--xxxxl)
+}
